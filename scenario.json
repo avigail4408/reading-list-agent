@@ -1,0 +1,23 @@
+{
+  "sessions": [
+    {
+      "session_id": 1,
+      "turns": [
+        "תזכור שאני מעדיפה לקרוא רק מאמרים קצרים בנושא AI.",
+        "תוסיף לרשימת הקריאה שלי מאמר בשם 'Attention Is All You Need' בקטגוריית AI בעדיפות גבוהה."
+      ]
+    },
+    {
+      "session_id": 2,
+      "turns": [
+        "מה ההעדפות ששמרת לי לגבי קריאה מהסשן הקודם?",
+        "תציג לי את כל הפריטים ברשימת הקריאה שלי."
+      ]
+    }
+  ],
+  "assertions": [
+    {"type": "memory_key_exists", "key": "book_length"},
+    {"type": "item_exists", "title_contains": "Attention Is All You Need"},
+    {"type": "min_items_count", "count": 1}
+  ]
+}
